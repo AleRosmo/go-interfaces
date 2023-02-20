@@ -32,7 +32,7 @@ type Describable interface {
 NumType receiver method Describe(), implementation of this method means it will implement the Describable interface.
 
 ```golang
-func (num *NumType) Describe() *NumType 
+func (num *NumType) Describe() *NumType {
     fmt.Printf("NumType type %T - value representation %v\n", num, num)
     fmt.Printf("pointer value %v - type %T\n", *(num), *(num))
     fmt.Printf("num value  %v - type %T\n\n", num, num)
