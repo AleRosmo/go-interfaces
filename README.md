@@ -57,9 +57,9 @@ identical to the one implemented by the interface, the type implements the inter
 func (s *NumStruct) Describe() *NumType {
     fmt.Printf("NumStruct type %T - value representation %v\n", s, s)
     fmt.Printf("pointer value %v - type %T\n", *(s), *(s))
-	fmt.Printf("s.num value  %v - type %T\n\n", s.num, s.num)
-	_converted := NumType(s.num)
-	return &_converted
+    fmt.Printf("s.num value  %v - type %T\n\n", s.num, s.num)
+    _converted := NumType(s.num)
+    return &_converted
 }
 ```
 
