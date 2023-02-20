@@ -5,9 +5,11 @@
 ## Function Signature's anatomy
 
 Given the example:
+
 ```golang
 func (i myInt) AddInts(i1 int, i2 int) int {return i1 + i2}
 ```
+
 The '(i myInt)' part is named receiver type argument.
 
 ## Methods Sets
