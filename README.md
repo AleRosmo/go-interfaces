@@ -71,12 +71,13 @@ func main() {
     var n1 Describable = &NumStruct{10}
     r1 := n1.Describe()
     fmt.Printf("n1 has returned a pointer to value %v of type %T\n\n", *r1, r1)
-}
+..
 ```
 
 Declaring 'n2' var of type 'Describable' interface Declaring and assigning '_n2' as 'NumType' type and value's literal '10' Assigning to 'n2' a reference to '_n2' memory address Calling 'Describe()' method, which will return a converted
 
 ```golang
+..
 var n2 Describable
 _n2 := NumType(10)
 n2 = &_n2
